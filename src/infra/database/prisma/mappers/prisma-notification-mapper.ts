@@ -11,6 +11,7 @@ export class PrismaNotificationMapper {
       category: notification.category,
       createdAt: notification.createdAt,
       readAt: notification.readAt,
+      canceledAt: notification.canceledAt,
     };
   }
 
