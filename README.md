@@ -73,6 +73,87 @@ Este projeto é uma API para gerenciar notificações para usuários.
    ```
 </details>
 
+<details>
+   <summary><strong>PATCH /notifications/:id/read</strong> - lê notificação</summary><br/>
+      
+   Corpo da requisição:
+   
+   ```bash
+      Não possui corpo da requisição, apenas o id da notificação na url.
+   ```
+   
+   Resposta:
+
+   ```bash
+      Não possui resposta.
+   ```
+</details>
+
+<details>
+   <summary><strong>PATCH /notifications/:id/unread</strong> - cancela leitura da notificação</summary><br/>
+      
+   Corpo da requisição:
+   
+   ```bash
+      Não possui corpo da requisição, apenas o id da notificação na url.
+   ```
+   
+   Resposta:
+
+   ```bash
+      Não possui resposta.
+   ```
+</details>
+
+<details>
+   <summary><strong>GET /notifications/from/:recipientId</strong> - obtém notificações através do id do destinatário</summary><br/>
+      
+   Corpo da requisição:
+   
+   ```bash
+      Não possui corpo da requisição, apenas o id do destinatário na url.
+   ```
+   
+   Resposta:
+
+   ```bash
+   {
+      "notifications": [
+         {
+            "id": "id_da_notificacao",
+            "recipientId": "id_do_destinatario",
+            "content": "conteudo_da_notificacao",
+            "category": "categoria_da_notificacao"
+         },
+         {
+            "id": "id_da_notificacao",
+            "recipientId": "id_do_destinatario",
+            "content": "conteudo_da_notificacao",
+            "category": "categoria_da_notificacao"
+         },
+      ]
+   }
+   ```
+</details>
+
+<details>
+   <summary><strong>GET /notifications/count/from/:recipientId</strong> - conta notificações através do id do destinatário</summary><br/>
+      
+   Corpo da requisição:
+   
+   ```bash
+      Não possui corpo da requisição, apenas o id do destinatário na url.
+   ```
+   
+   Resposta:
+
+   ```bash
+   {
+      "count": numero_de_notificacoes_que_destinatario_possui
+   }
+   ```
+</details>
+
 ## Testes
 
 Para rodar os testes, execute o seguinte comando:
