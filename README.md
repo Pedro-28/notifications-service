@@ -57,6 +57,22 @@ Este projeto é uma API para gerenciar notificações para usuários.
    ```
 </details>
 
+<details>
+   <summary><strong>PATCH /notifications/:id/cancel</strong> - cancela notificação</summary><br/>
+      
+   Corpo da requisição:
+   
+   ```bash
+      Não possui corpo da requisição, apenas o id da notificação na url.
+   ```
+   
+   Resposta:
+
+   ```bash
+      Não possui resposta.
+   ```
+</details>
+
 ## Testes
 
 Para rodar os testes, execute o seguinte comando:
