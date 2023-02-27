@@ -28,6 +28,35 @@ Este projeto é uma API para gerenciar notificações para usuários.
    ```sh
    $ npm run start:dev
    ```
+## Rotas
+
+<details>
+   <summary><strong>POST /notifications</strong> - cria notificação</summary><br/>
+      
+   Corpo da requisição:
+   
+   ```bash
+   {
+      "recipientId": "id_do_destinatario",
+      "content": "conteudo_da_notificacao",
+      "category": "categoria_da_notificacao"
+   }
+   ```
+   
+   Resposta:
+
+   ```bash
+   {
+      "notification": {
+         "id": "id_da_notificacao",
+         "recipientId": "id_do_destinatario",
+         "content": "conteudo_da_notificacao",
+         "category": "categoria_da_notificacao"
+      }
+   }
+   ```
+</details>
+
 ## Testes
 
 Para rodar os testes, execute o seguinte comando:
