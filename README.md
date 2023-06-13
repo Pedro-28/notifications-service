@@ -1,6 +1,6 @@
 # API de Notificações
 
-Este projeto é uma API para gerenciar notificações para usuários.
+Este projeto é uma API para gerenciar notificações para usuários, desenvolvido utilizando os princípios do Clean Code, Clean Architecture e Programação Orientada a Objetos. Além disso, foi adotado o padrão de projeto Domain-Driven Design (DDD) e os princípios do SOLID para promover uma estrutura organizada e de fácil manutenção.
 
 ## Tecnologias
 
